@@ -5,17 +5,15 @@ export const Skills = () => {
   return (
     <section>
       <br />
-
-      <h2 className="flex flex-col justify-center items-center bg-black max-w max-h text-3xl">
+      <h2 className="text-cyan-500 flex flex-col justify-center items-center bg-black max-w max-h text-4xl mt-2 mb-10">
         Skills
       </h2>
-      <br />
       <br />
       <div className="hover:animate-bounce delay-75 flex flex-row justify-center items-center bg-black max-w max-h">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="Java-Script"
-          viewBox="0 0 50 50"
+          viewBox="0 0 60 60"
           id="java-script"
         >
           <path
@@ -27,7 +25,7 @@ export const Skills = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="React"
-          viewBox="0 0 50 50"
+          viewBox="0 0 60 60"
           id="react"
         >
           <path
@@ -39,7 +37,7 @@ export const Skills = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="Html5"
-          viewBox="0 0 50 50"
+          viewBox="0 0 60 60"
           id="html5"
         >
           <path
@@ -50,7 +48,7 @@ export const Skills = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="CSS3"
-          viewBox="0 0 50 50"
+          viewBox="0 0 60 60"
           id="css3-simple"
         >
           <path
@@ -61,7 +59,7 @@ export const Skills = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="Linux"
-          viewBox="0 0 50 50"
+          viewBox="0 0 60 60"
           id="linux"
         >
           <path
@@ -72,7 +70,7 @@ export const Skills = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="Windows"
-          viewBox="0 0 50 50"
+          viewBox="0 0 60 60"
           id="windows"
         >
           <path
@@ -83,7 +81,7 @@ export const Skills = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           data-name="Git"
-          viewBox="0 0 50 50"
+          viewBox="0 0 60 60"
           id="github"
         >
           <path

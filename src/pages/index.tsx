@@ -16,13 +16,15 @@ export default function Home() {
           <div>
             <CardDev />
           </div>
+        </section>
+        <section>
           <div>
             <Skills />
           </div>
         </section>
         <section>
-          <div>
-            <h1>Projets</h1>
+          <div className="text-cyan-500 text-4xl flex justify-center mt-10">
+            <h1>Projets WordPress</h1>
           </div>
         </section>
       </main>
