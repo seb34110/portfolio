@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { HeaderSite } from "./components/header";
 import { FooterSite } from "./components/footer";
 import { CardDev } from "./components/cardDev";
-import { CardSkills } from "./components/CardSkills";
+import { Skills } from "./components/skills";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,7 +17,7 @@ export default function Home() {
             <CardDev />
           </div>
           <div>
-            <CardSkills />
+            <Skills />
           </div>
         </section>
         <section>
