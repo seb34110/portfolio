@@ -1,4 +1,3 @@
-import { UilReact } from "iconscout/react-unicons";
 import Link from "next/link";
 
 export const Skills = () => {
@@ -11,7 +10,7 @@ export const Skills = () => {
       <br />
       <div className="hover:animate-bounce delay-75 flex flex-row justify-center items-center bg-black max-w max-h">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          href="../icons/java-script"
           data-name="Java-Script"
           viewBox="0 0 60 60"
           id="java-script"
@@ -23,7 +22,7 @@ export const Skills = () => {
         </svg>
 
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          href="../icons/react"
           data-name="React"
           viewBox="0 0 60 60"
           id="react"
@@ -35,7 +34,7 @@ export const Skills = () => {
         </svg>
 
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          href="../icons/html5"
           data-name="Html5"
           viewBox="0 0 60 60"
           id="html5"
@@ -46,7 +45,7 @@ export const Skills = () => {
           ></path>
         </svg>
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          href="../icons/css3"
           data-name="CSS3"
           viewBox="0 0 60 60"
           id="css3-simple"
@@ -57,7 +56,7 @@ export const Skills = () => {
           ></path>
         </svg>
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          href="../icons/linux"
           data-name="Linux"
           viewBox="0 0 60 60"
           id="linux"
@@ -68,7 +67,7 @@ export const Skills = () => {
           ></path>
         </svg>
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          href="../icons/windows"
           data-name="Windows"
           viewBox="0 0 60 60"
           id="windows"
@@ -79,7 +78,7 @@ export const Skills = () => {
           ></path>
         </svg>
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          href="../icons/github"
           data-name="Git"
           viewBox="0 0 60 60"
           id="github"
