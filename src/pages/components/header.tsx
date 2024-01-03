@@ -22,7 +22,7 @@ export const HeaderSite = () => {
             <Link href="../contact">Contact</Link>
           </li>
           <li className="mr-2 hover:text-cyan-500">
-            <Link href="../projets">Projets</Link>
+            <Link href="https://iteeweb.fr">Site web</Link>
           </li>
         </ul>
       </header>
