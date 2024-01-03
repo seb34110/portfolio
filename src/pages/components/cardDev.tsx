@@ -18,7 +18,7 @@ export const CardDev = () => {
           Sébastien Wendling
         </h1>
         <h3 className="text-white text-3xl mb-10">
-          Développeur web React/Next.Js.
+          Développeur web React/WordPress.
         </h3>
       </section>
     </Card>
