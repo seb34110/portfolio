@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const FooterSite = () => {
   return (
@@ -7,10 +8,11 @@ export const FooterSite = () => {
         <span>@ Copywright 2022 Sébastien Wendling</span>
         <div>
           <Link href="./">
-            <img
+            <Image
               src="/logoSWC.jpg"
+              width="50"
+              height="50"
               alt="logo SecureWeb Creation"
-              className="mx-auto w-16 h-16 object-cover rounded-full"
             />
           </Link>
         </div>

@@ -21,6 +21,11 @@ export default function Home() {
             <CardSkills />
           </div>
         </section>
+        <section>
+          <div>
+            <h1>Projets</h1>
+          </div>
+        </section>
       </main>
       <FooterSite />
     </>

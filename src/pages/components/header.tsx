@@ -1,14 +1,15 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export const HeaderSite = () => {
   return (
     <div className="flex flex-col max-h-screen">
       <header className="bg-black text-white p-4 mt-auto flex items-center justify-between">
         <div className="h-16">
           <Link href="./">
-            <img
-              className="mx-auto w-16 h-16 object-cover rounded-full"
-              src="./logoSWC.jpg"
+            <Image
+              src="/logoSWC.jpg"
+              width="60"
+              height="60"
               alt="logo SecureWeb Creation"
             />
           </Link>
