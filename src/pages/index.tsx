@@ -3,6 +3,7 @@ import { HeaderSite } from "./components/header";
 import { FooterSite } from "./components/footer";
 import { CardDev } from "./components/cardDev";
 import { Skills } from "./components/skills";
+import { CardWordpress } from "./components/cardWordpress";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,8 +24,8 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="text-cyan-500 text-4xl flex justify-center mt-10">
-            <h1>Projets WordPress</h1>
+          <div>
+            <CardWordpress />
           </div>
         </section>
       </main>
