@@ -4,10 +4,10 @@ export const Skills = () => {
   return (
     <>
       <section>
-        <h2 className="p-6 text-cyan-500 flex flex-col justify-center items-center max-w max-h text-4xl mt-2 mb-10">
+        <h2 className="p-6 text-cyan-500 flex justify-center items-center text-4xl mt-2 mb-10">
           Skills
         </h2>
-        <div className="p-3 flex justify-center hover:flex-row hover:animate-bounce delay-75 flex flex-row justify-center items-center max-w max-h">
+        <div className="ml-10 flex justify-center hover:flex-row hover:animate-bounce delay-75">
           <svg
             href="../icons/wordpress"
             data-name="wordpress"
