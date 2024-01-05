@@ -54,25 +54,25 @@ export const CardWordpress = () => {
         </Card>
 
         <Card className="ml-10 mt-10 w-60 h-70 bg-gradient-to-r from-cyan-500 to-blue-500 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
-          <a href="https://la-fabrique.iteeweb.fr/">
+          <a href="https://solution-net34.iteeweb.fr/">
             <Image
-              src="/iconsWordpress/laFabrique.jpg"
-              width={185}
-              height={160}
+              src="/iconsWordpress/solutionNet.jpg"
+              width={200}
+              height={200}
               alt="closMarsault"
               className="rounded-lg mt-4 mx-auto"
             />
           </a>
 
           <div className="p-10">
-            <a href="https://la-fabrique.iteeweb.fr/">
+            <a href="https://solution-net34.iteeweb.fr/">
               <h5 className="mb-2 flex justify-center text-2xl font-bold text-gray-900 dark:text-white">
-                Site vitrine de restaurant
+                Site vitrine entreprise de nettoyage
               </h5>
             </a>
 
             <a
-              href="https://la-fabrique.iteeweb.fr/"
+              href="https://solution-net34.iteeweb.fr/"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Cliquez-ici
@@ -96,25 +96,25 @@ export const CardWordpress = () => {
         </Card>
 
         <Card className="ml-10 mt-10 w-60 h-70 bg-gradient-to-r from-cyan-500 to-blue-500 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
-          <a href="https://la-fabrique.iteeweb.fr/">
+          <a href="https://clos-marsault.iteeweb.fr/">
             <Image
-              src="/iconsWordpress/laFabrique.jpg"
-              width={185}
-              height={160}
+              src="/iconsWordpress/closMarsault.png"
+              width={200}
+              height={200}
               alt="closMarsault"
               className="rounded-lg mt-4 mx-auto"
             />
           </a>
 
           <div className="p-10">
-            <a href="https://la-fabrique.iteeweb.fr/">
+            <a href="https://clos-marsault.iteeweb.fr/">
               <h5 className="mb-2 flex justify-center text-2xl font-bold text-gray-900 dark:text-white">
-                Site vitrine de restaurant
+                Site vitrine chambre hôtes
               </h5>
             </a>
 
             <a
-              href="https://la-fabrique.iteeweb.fr/"
+              href="https://clos-marsault.iteeweb.fr/"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Cliquez-ici
