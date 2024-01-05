@@ -10,8 +10,8 @@ export const CardWordpress = () => {
         <br />
       </div>
 
-      <section className="grid grid-cols-3 gap-3 mx-auto">
-        <Card className="ml-10 mt-10 w-60 h-70 bg-gradient-to-r from-cyan-500 to-blue-500 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
+      <section className="grid grid-cols-3 gap-3">
+        <Card className="flex ml-10 mt-10 w-60 h-70 bg-gradient-to-r from-cyan-500 to-blue-500 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
           <a href="https://la-fabrique.iteeweb.fr/">
             <Image
               src="/iconsWordpress/laFabrique.jpg"
