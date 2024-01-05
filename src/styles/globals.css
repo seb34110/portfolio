@@ -17,5 +17,17 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
+}
+footer {
+  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
+}
+header {
+  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
+}
+.Card {
+  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
+}
+.Skills {
+  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
 }

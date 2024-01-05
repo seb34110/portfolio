@@ -5,7 +5,7 @@ import { Card } from "flowbite-react";
 
 export const CardDev = () => {
   return (
-    <Card className="rounded-lg border-cyan-500 flex flex-col justify-center items-center bg-black max-w max-h">
+    <Card className="Card rounded-lg border-cyan-500 flex flex-col justify-center items-center max-w max-h">
       <Image
         src="/profile.jpg"
         width={150}
