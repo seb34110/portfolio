@@ -20,13 +20,13 @@ body {
   background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
 }
 footer {
-  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
+  background-color: black;
 }
 header {
-  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
+  background-color: black;
 }
 .Card {
-  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
+  background-color: black;
 }
 .Skills {
   background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));

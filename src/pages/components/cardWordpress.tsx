@@ -7,10 +7,9 @@ export const CardWordpress = () => {
     <>
       <div className=" mt-10 text-cyan-500 text-4xl flex justify-center">
         <h1>Projets WordPress</h1>
-        <br />
       </div>
 
-      <section className="grid grid-cols-3 gap-3">
+      <section className="flex justify-center space-x-10">
         <Card className="flex ml-10 mt-10 w-60 h-70 bg-gradient-to-r from-cyan-500 to-blue-500 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
           <a href="https://la-fabrique.iteeweb.fr/">
             <Image
