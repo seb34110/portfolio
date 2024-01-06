@@ -35,3 +35,30 @@ header {
 .Skills {
   background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
 }
+
+@keyframes borderAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5%);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.border-gradient {
+  background: cyan;
+  animation: borderAnimation 4s linear infinite;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+}
