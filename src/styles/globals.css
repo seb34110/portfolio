@@ -26,8 +26,12 @@ header {
   background-color: black;
 }
 .Card {
-  background-color: black;
+  background-color: #111;
+  margin: 0;
+  overflow: hidden;
+  animation: stars 50s linear infinite;
 }
+
 .Skills {
   background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
 }
