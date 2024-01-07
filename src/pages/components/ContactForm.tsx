@@ -1,3 +1,4 @@
+import { NeonButton } from "../components/neonButton";
 import {
   useForm,
   SubmitHandler,
@@ -21,6 +22,11 @@ export const ContactForm: React.FC = () => {
   const onSubmit: SubmitHandler<FormData> = (data) => {
     console.log(data);
     // Envoyez les données à votre backend ici
+  };
+
+  const handleClick = () => {
+    // Fonction à exécuter lors du clic sur le bouton
+    console.log("Bouton cliqué!");
   };
 
   return (
@@ -82,9 +88,7 @@ export const ContactForm: React.FC = () => {
           )}
         </div>
 
-        <button type="submit" className="border-gradient">
-          Envoyer
-        </button>
+        <NeonButton onClick={handleClick}>Envoyer</NeonButton>
       </form>
     </div>
   );

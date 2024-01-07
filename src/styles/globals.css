@@ -27,40 +27,109 @@ header {
 }
 .Card {
   background-color: #111;
-  margin: 0;
-  overflow: hidden;
-  animation: stars 50s linear infinite;
 }
 
 .Skills {
   background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
 }
 
-@keyframes borderAnimation {
+.neonButton {
+  position: relative;
+  padding: 10px 20px;
+  margin: 5px 5;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.neonButton:hover {
+  background: #03e9f4;
+  color: #050801;
+}
+
+.neonButton span {
+  position: absolute;
+  display: block;
+}
+
+.neonButton span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
   0% {
-    transform: translateX(0);
+    left: -100%;
   }
-  25% {
-    transform: translateX(5%);
-  }
-  50% {
-    transform: translateY(20%);
-  }
-  75% {
-    transform: translateY(0);
-  }
+  50%,
   100% {
-    transform: translateX(0);
+    left: 100%;
   }
 }
 
-.border-gradient {
-  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
-    drop-shadow(0 4px 4px rgb(212, 209, 209));
-  background: cyan;
-  animation: borderAnimation 4s linear infinite;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
+.neonButton span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.neonButton span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.neonButton span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }
