@@ -25,7 +25,16 @@ footer {
 header {
   background-color: black;
 }
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
 .Card {
+  flex: 1;
   background-color: #111111;
 }
 
@@ -46,7 +55,7 @@ header {
   overflow: hidden;
   margin-top: 10;
   margin-right: 0px;
-  text-align: center;
+  display: flex;
   justify-content: center; /* Ajout de la propriété pour centrer horizontalement */
   align-items: center; /* Ajout de la propriété pour centrer verticalement */
 }
