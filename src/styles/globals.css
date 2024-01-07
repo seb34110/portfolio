@@ -34,9 +34,10 @@ header {
 }
 
 .neonButton {
+  width: 130px;
   position: relative;
-  padding: 10px 20px;
-  margin: 5px 5;
+  padding: 5px;
+  margin: 5px 2;
   color: #03e9f4;
   text-decoration: none;
   text-transform: uppercase;
@@ -62,7 +63,7 @@ header {
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: animate1 1s linear infinite;
+  animation: animate1 1.5s linear infinite;
 }
 @keyframes animate1 {
   0% {
@@ -80,7 +81,7 @@ header {
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #03e9f4);
-  animation: animate2 1s linear infinite;
+  animation: animate2 1.5s linear infinite;
   animation-delay: 0.25s;
 }
 
@@ -100,7 +101,7 @@ header {
   width: 100%;
   height: 2px;
   background: linear-gradient(270deg, transparent, #03e9f4);
-  animation: animate3 1s linear infinite;
+  animation: animate3 1.5s linear infinite;
   animation-delay: 0.5s;
 }
 
@@ -120,7 +121,7 @@ header {
   width: 2px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #03e9f4);
-  animation: animate4 1s linear infinite;
+  animation: animate4 1.5s linear infinite;
   animation-delay: 0.75s;
 }
 
