@@ -26,7 +26,7 @@ header {
   background-color: black;
 }
 .Card {
-  background-color: #111;
+  background-color: #111111;
 }
 
 .Skills {
@@ -44,7 +44,11 @@ header {
   transition: 0.5s;
   letter-spacing: 4px;
   overflow: hidden;
-  margin-right: 50px;
+  margin-top: 10;
+  margin-right: 0px;
+  text-align: center;
+  justify-content: center; /* Ajout de la propriété pour centrer horizontalement */
+  align-items: center; /* Ajout de la propriété pour centrer verticalement */
 }
 
 .neonButton:hover {
@@ -55,6 +59,7 @@ header {
 .neonButton span {
   position: absolute;
   display: block;
+  text-align: center;
 }
 
 .neonButton span:nth-child(1) {
