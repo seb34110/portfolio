@@ -24,6 +24,39 @@ export const FooterSite = () => {
             <Link href="mailto:sebastienwendling@iteeweb.fr">Email</Link>
           </li>
         </ul>
+        <div className="social-icons">
+          <a href="lien-de-votre-page-facebook">
+            <Image
+              src="/iconsSociaux/facebook.png"
+              width={20}
+              height={20}
+              alt="facebook"
+              className="rounded-lg mx-auto"
+            />
+          </a>
+        </div>
+        <div className="social-icons">
+          <a href="lien-de-votre-page-instagram">
+            <Image
+              src="/iconsSociaux/instagram.png"
+              width={20}
+              height={20}
+              alt="instagram"
+              className="rounded-lg mx-auto"
+            />
+          </a>
+        </div>
+        <div className="social-icons">
+          <a href="lien-de-votre-page-whatsapp">
+            <Image
+              src="/iconsSociaux/whatsapp.png"
+              width={20}
+              height={20}
+              alt="whatsapp"
+              className="rounded-lg mx-auto"
+            />
+          </a>
+        </div>
       </footer>
     </div>
   );
