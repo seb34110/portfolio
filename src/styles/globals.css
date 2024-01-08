@@ -30,9 +30,6 @@ header {
   display: flex;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
 .Card {
   flex: 1;
   background-color: #111111;

@@ -15,15 +15,14 @@ export const CardWordpress = () => {
           <Card className="flex ml-10 mt-10 w-60 h-70 bg-#111111 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
             <a href="https://la-fabrique.iteeweb.fr/">
               <Image
-                src="/iconsWordpress/laFabrique.jpg"
-                width={185}
-                height={160}
+                src="/iconsWordpress/image5.jpg"
+                width={200}
+                height={200}
                 alt="la fabrique restaurant"
                 className="rounded-lg mt-4 mx-auto"
               />
             </a>
-
-            <div className="p-10">
+            <div className="p-9 flex flex-col items-center">
               <a href="https://la-fabrique.iteeweb.fr/">
                 <h5 className="mb-20 flex justify-center text-center text-2xl font-arial text-white dark:text-white">
                   Site vitrine de restaurant
@@ -46,7 +45,7 @@ export const CardWordpress = () => {
         </div>
 
         <div className="card">
-          <Card className="ml-10 mt-10 w-60 h-70 bg-#111111 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
+          <Card className="ml-10 mt-10 bg-#111111 w-60 h-70 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
             <a href="https://solution-net34.iteeweb.fr/">
               <Image
                 src="/iconsWordpress/solutionNet.jpg"
@@ -57,9 +56,9 @@ export const CardWordpress = () => {
               />
             </a>
 
-            <div className="p-10">
+            <div className="p-9 flex flex-col items-center">
               <a href="https://solution-net34.iteeweb.fr/">
-                <h5 className="mb-20 flex justify-center text-white text-2xl font-arial text-gray-900 dark:text-white">
+                <h5 className="mb-20 flex justify-center text-center text-2xl font-arial text-white dark:text-white">
                   Site vitrine de nettoyage
                 </h5>
               </a>
@@ -81,7 +80,7 @@ export const CardWordpress = () => {
         </div>
 
         <div className="card">
-          <Card className="ml-10 mt-10 w-60 h-70 bg-#111111 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
+          <Card className="ml-10 mt-10 bg-#111111 w-60 h-70 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
             <a href="https://clos-marsault.iteeweb.fr/">
               <Image
                 src="/iconsWordpress/closMarsault.png"
@@ -92,9 +91,9 @@ export const CardWordpress = () => {
               />
             </a>
 
-            <div className="p-10">
+            <div className="p-9 flex flex-col items-center">
               <a href="https://clos-marsault.iteeweb.fr/">
-                <h5 className="mb-20 flex justify-center text-white text-2xl font-arial text-gray-900 dark:text-white">
+                <h5 className="mb-20 flex justify-center text-center text-2xl font-arial text-white dark:text-white">
                   Site vitrine chambre hôtes
                 </h5>
               </a>
