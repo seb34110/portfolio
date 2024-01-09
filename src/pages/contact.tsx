@@ -7,12 +7,12 @@ const Contact = () => {
   return (
     <>
       <HeaderSite />
-      <main>
+      <section>
         <div className="container mx-auto p-4">
           <h1 className="text-cyan-500 text-4xl text-center mb-4">Contact</h1>
           <ContactForm />
         </div>
-      </main>
+      </section>
       <FooterSite />
     </>
   );
