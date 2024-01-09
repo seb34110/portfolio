@@ -4,7 +4,7 @@ import Image from "next/image";
 export const HeaderSite = () => {
   return (
     <div className="flex flex-col max-h-screen">
-      <header className="bg-black text-white p-1 mt-auto flex items-center justify-between">
+      <header className="bg-black  text-white p-1 mt-auto flex items-center justify-between">
         <div className="h-16">
           <Link href="./">
             <Image
@@ -22,7 +22,7 @@ export const HeaderSite = () => {
           <li className="mr-3 hover:text-cyan-500">
             <Link href="../contact">Contact</Link>
           </li>
-          <li className="mr-2 hover:text-cyan-500">
+          <li className="mr-5 hover:text-cyan-500">
             <Link href="https://iteeweb.fr">Site web</Link>
           </li>
         </ul>
