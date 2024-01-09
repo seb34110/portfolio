@@ -16,47 +16,50 @@ export const FooterSite = () => {
             />
           </Link>
         </div>
-        <ul className="ml-4 flex justify-end">
+        <ul className="flex justify-end mr-5">
           <li className="mr-5">
             <Link href="../contact">Contact</Link>
           </li>
           <li className="mr-5">
             <Link href="mailto:sebastienwendling@iteeweb.fr">Email</Link>
           </li>
+
+          <div className="flex justify-end">
+            <div className="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100090885591076">
+                <Image
+                  src="/iconsSociaux/facebook.png"
+                  width={20}
+                  height={20}
+                  alt="facebook"
+                  className="rounded-lg mx-auto mr-2"
+                />
+              </a>
+            </div>
+            <div className="social-icons">
+              <a href="lien-de-votre-page-instagram">
+                <Image
+                  src="/iconsSociaux/instagram.png"
+                  width={20}
+                  height={20}
+                  alt="instagram"
+                  className="rounded-lg mx-auto mr-2"
+                />
+              </a>
+            </div>
+            <div className="social-icons">
+              <a href="lien-de-votre-page-whatsapp">
+                <Image
+                  src="/iconsSociaux/whatsapp.png"
+                  width={20}
+                  height={20}
+                  alt="whatsapp"
+                  className="rounded-lg mx-auto"
+                />
+              </a>
+            </div>
+          </div>
         </ul>
-        <div className="social-icons">
-          <a href="lien-de-votre-page-facebook">
-            <Image
-              src="/iconsSociaux/facebook.png"
-              width={20}
-              height={20}
-              alt="facebook"
-              className="rounded-lg mx-auto"
-            />
-          </a>
-        </div>
-        <div className="social-icons">
-          <a href="lien-de-votre-page-instagram">
-            <Image
-              src="/iconsSociaux/instagram.png"
-              width={20}
-              height={20}
-              alt="instagram"
-              className="rounded-lg mx-auto"
-            />
-          </a>
-        </div>
-        <div className="social-icons">
-          <a href="lien-de-votre-page-whatsapp">
-            <Image
-              src="/iconsSociaux/whatsapp.png"
-              width={20}
-              height={20}
-              alt="whatsapp"
-              className="rounded-lg mx-auto"
-            />
-          </a>
-        </div>
       </footer>
     </div>
   );

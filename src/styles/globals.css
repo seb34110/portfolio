@@ -31,8 +31,7 @@ header {
 }
 
 .Card {
-  flex: 1;
-  background-color: #111111;
+  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
 }
 
 .Skills {
