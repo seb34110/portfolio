@@ -1,9 +1,11 @@
-/** @type {import('next').NextConfig} */
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 const nextConfig = {
   reactStrictMode: true,
   env: {
-    KEY_SENDGRID:
-      "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",
+    KEY_SENDGRID: process.env.SENDGRID_API_KEY,
   },
 };
 

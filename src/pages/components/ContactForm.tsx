@@ -1,5 +1,4 @@
 import { NeonButton } from "../components/neonButton";
-import { useState } from "react";
 import {
   useForm,
   SubmitHandler,
@@ -8,7 +7,8 @@ import {
 } from "react-hook-form";
 
 interface FormData {
-  name: string;
+  nom: string;
+  prenom: string;
   email: string;
   message: string;
 }
@@ -18,16 +18,17 @@ export const ContactForm: React.FC = () => {
     handleSubmit,
     control,
     formState: { errors },
-  } = useForm<FormData>();
+  } = useForm<FormData>({
+    defaultValues: {
+      nom: "", // Ajoutez ces lignes pour définir des valeurs par défaut
+      prenom: "",
+      email: "",
+      message: "",
+    },
+  });
 
-  // State
-  const [isLoading, setIsLoading] = useState(false);
-
-  const onSubmit: SubmitHandler<FormData> = (data) => {
-    console.log(data);
-    // Envoyez les données à votre backend ici
-
-    const onSubmitHandler = async (data) => {
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -43,13 +44,9 @@ export const ContactForm: React.FC = () => {
       } else {
         console.log("ok");
       }
-    };
-  };
-
-  const handleClick = () => {
-    // Fonction à exécuter lors du clic sur le bouton
-
-    console.log("Bouton cliqué!");
+    } catch (error) {
+      console.error("An error occurred", error);
+    }
   };
 
   return (
@@ -60,30 +57,30 @@ export const ContactForm: React.FC = () => {
             <div>
               <label className="block text-white font-bold">Nom</label>
               <Controller
-                name="name"
+                name="nom"
                 control={control}
                 render={({ field }) => (
                   <input {...field} className="w-full p-2 border rounded" />
                 )}
                 rules={{ required: "Ce champ est requis" }}
               />
-              {errors.name && (
-                <p className="text-red-500">{errors.name.message}</p>
+              {errors.nom && (
+                <p className="text-red-500">{errors.nom.message}</p>
               )}
             </div>
 
             <div>
               <label className="block text-white font-bold">Prénom</label>
               <Controller
-                name="name"
+                name="prenom"
                 control={control}
                 render={({ field }) => (
                   <input {...field} className="w-full p-2 border rounded" />
                 )}
                 rules={{ required: "Ce champ est requis" }}
               />
-              {errors.name && (
-                <p className="text-red-500">{errors.name.message}</p>
+              {errors.prenom && (
+                <p className="text-red-500">{errors.prenom.message}</p>
               )}
             </div>
           </section>
@@ -131,7 +128,7 @@ export const ContactForm: React.FC = () => {
             )}
           </div>
 
-          <NeonButton onClick={handleClick}>Envoyer</NeonButton>
+          <NeonButton type="submit">Envoyer</NeonButton>
         </form>
       </div>
     </>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { HeaderSite } from "./components/header";
 import { FooterSite } from "./components/footer";
 import { ContactForm } from "./components/ContactForm";
-import { useForm } from "react-hook-form";
+
 const Contact = () => {
   return (
     <>

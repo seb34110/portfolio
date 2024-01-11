@@ -1,7 +1,7 @@
 // Librairie
 import sgMail from "@sendgrid/mail";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method !== "POST") {
     res.status(405).json({ message: "INVALID_METHOD" });
     return;
@@ -37,28 +37,27 @@ export default function handler(req, res) {
 
   // Création du message
   const sendGridMail = {
-    to: "sebastienwendling@orange.fr",
-    from: "sebastienwendling@orange.fr",
+    to: "wendling34110@gmail.com",
+    from: "wendling34110@gmail.com",
     templateId: "d-ece79ca715dc48f3a586580859e04143",
     dynamic_template_data: {
+      contenu: message,
       prenom: prenom,
       nom: nom,
       email: email,
-      contenu: message,
     },
   };
-  // SendGrid
-  (async () => {
-    try {
-      await sgMail.send(sendGridMail);
-      res.status(200).json({
-        message: "EMAIL_SENDED_SUCCESSFULLY",
-      });
-    } catch {
-      res.status(500).json({
-        message: "ERROR_WITH_SENDGRID",
-      });
-      return;
-    }
-  })();
+
+  try {
+    await sgMail.send(sendGridMail);
+    res.status(200).json({
+      message: "EMAIL_SENDED_SUCCESSFULLY",
+    });
+  } catch (error) {
+    console.error("Error with SendGrid:", error);
+    res.status(500).json({
+      message: "ERROR_WITH_SENDGRID",
+      error: error.message,
+    });
+  }
 }

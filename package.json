@@ -11,6 +11,7 @@
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
     "@sendgrid/mail": "^8.1.0",
+    "dotenv": "^16.3.1",
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
     "next": "14.0.4",
