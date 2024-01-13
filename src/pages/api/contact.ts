@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   }
 
   // Variables
-  const { prenom, nom, email, contenu } = req.body;
+  const { nom, prenom, email, contenu } = req.body;
 
   if (!prenom || !nom || !email || !contenu) {
     res.status(400).json({ message: "INVALID_PARAMETER" });
@@ -33,18 +33,18 @@ export default async function handler(req, res) {
     .replace(/<(?!br\s*\/?)[^>]+>/g, ""); // supprime tout le html en autorisant uniquement les balises <br>
 
   // Donner la clé API
-  sgMail.setApiKey(process.env.KEY_SENDGRID);
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   // Création du message
   const sendGridMail = {
-    to: "wendling34110@gmail.com",
-    from: "wendling34110@gmail.com",
+    to: "sebastienwendling@orange.fr",
+    from: "sebastienwendling@orange.fr",
     templateId: "d-ece79ca715dc48f3a586580859e04143",
     dynamic_template_data: {
-      contenu: message,
-      prenom: prenom,
       nom: nom,
+      prenom: prenom,
       email: email,
+      contenu: message,
     },
   };
 

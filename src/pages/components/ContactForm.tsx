@@ -127,8 +127,12 @@ export const ContactForm: React.FC = () => {
               <p className="text-red-500">{errors.message.message}</p>
             )}
           </div>
-
-          <NeonButton type="submit">Envoyer</NeonButton>
+          <div>
+            {/* Utilisez une balise button standard et spécifiez le type */}
+            <button type="submit" className="w-full p-2 border rounded">
+              Envoyer
+            </button>
+          </div>
         </form>
       </div>
     </>
