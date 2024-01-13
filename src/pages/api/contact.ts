@@ -1,14 +1,14 @@
 // Librairie
 import sgMail from "@sendgrid/mail";
 
-export default async function handler(req, res) {
+export default function handler(req, res) {
   if (req.method !== "POST") {
     res.status(405).json({ message: "INVALID_METHOD" });
     return;
   }
 
   // Variables
-  const { nom, prenom, email, contenu } = req.body;
+  const { prenom, nom, email, contenu } = req.body;
 
   if (!prenom || !nom || !email || !contenu) {
     res.status(400).json({ message: "INVALID_PARAMETER" });
@@ -30,10 +30,10 @@ export default async function handler(req, res) {
     .replace(/\n/g, "<br>")
     .replace(/\r/g, "<br>")
     .replace(/\t/g, "<br>")
-    .replace(/<(?!br\s*\/?)[^>]+>/g, ""); // supprime tout le html en autorisant uniquement les balises <br>
+    .replace(/<(?!br\s*\/?)[^>]+>/g, "");
 
   // Donner la clé API
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  sgMail.setApiKey(process.env.KEY_SENDGRID);
 
   // Création du message
   const sendGridMail = {
@@ -41,23 +41,24 @@ export default async function handler(req, res) {
     from: "sebastienwendling@orange.fr",
     templateId: "d-ece79ca715dc48f3a586580859e04143",
     dynamic_template_data: {
-      nom: nom,
       prenom: prenom,
+      nom: nom,
       email: email,
       contenu: message,
     },
   };
-
-  try {
-    await sgMail.send(sendGridMail);
-    res.status(200).json({
-      message: "EMAIL_SENDED_SUCCESSFULLY",
-    });
-  } catch (error) {
-    console.error("Error with SendGrid:", error);
-    res.status(500).json({
-      message: "ERROR_WITH_SENDGRID",
-      error: error.message,
-    });
-  }
+  // SendGrid
+  (async () => {
+    try {
+      await sgMail.send(sendGridMail);
+      res.status(200).json({
+        message: "EMAIL_SENDED_SUCCESSFULLY",
+      });
+    } catch {
+      res.status(500).json({
+        message: "ERROR_WITH_SENDGRID",
+      });
+      return;
+    }
+  })();
 }
