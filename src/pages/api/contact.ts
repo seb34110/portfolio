@@ -1,7 +1,8 @@
 // Librairie
+import { NextApiRequest, NextApiResponse } from "next";
 import sgMail from "@sendgrid/mail";
 
-export default function handler(req, res) {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
     res.status(405).json({ message: "INVALID_METHOD" });
     return;
