@@ -119,13 +119,11 @@ function Contact() {
 
           <div className="mt-5 flex justify-center">
             <div>
-              <label htmlFor="contenu" className="flex-justify-between">
+              <label htmlFor="contenu" className="flex justify-center mb-2">
                 Contenu du message
               </label>
               <textarea
-                className="input flex justify-cnter"
-                rows="8"
-                cols="100"
+                className="input flex justify-center w-96 h-full"
                 placeholder="Bonjour..."
                 {...register("contenu", {
                   required: true,
@@ -135,7 +133,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-20">
             {!isLoading && (
               <a className="neonButton text-center flex justify-center items-center">
                 <span></span>
