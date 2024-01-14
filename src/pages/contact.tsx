@@ -3,7 +3,6 @@ import { NeonButton } from "./components/neonButton";
 import { HeaderSite } from "./components/header";
 import { FooterSite } from "./components/footer";
 
-import Head from "next/head";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 
@@ -22,11 +21,6 @@ function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSended, setIsSended] = useState(false);
 
-  const handleButtonClick = () => {
-    console.log("Bouton cliqué !");
-    // Exécutez ici la logique pour envoyer le formulaire (à adapter selon vos besoins)
-    setIsSended(true);
-  };
   // Méthode
   const onSubmitHandler = async (data) => {
     if (!isLoading) {
@@ -57,9 +51,9 @@ function Contact() {
   return (
     <>
       <HeaderSite />
-      <Head>
-        <title>Contact</title>
-      </Head>
+      <div>
+        <h1>Contact</h1>
+      </div>
       <div className="text-xl">
         <h1 className="mt-28 text-6xl text-cyan-500  flex justify-center">
           Contact
