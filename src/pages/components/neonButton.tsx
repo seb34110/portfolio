@@ -1,21 +1,12 @@
 import React, { ReactNode, MouseEvent } from "react";
 
-interface NeonButtonProps {
-  children: ReactNode;
-  onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
-}
-
-export const NeonButton: React.FC<NeonButtonProps> = ({
-  children,
-  onClick,
-}) => {
+export const NeonButton = () => {
   return (
-    <a className="neonButton" onClick={onClick}>
+    <a className="neonButton">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
-      {children}
     </a>
   );
 };

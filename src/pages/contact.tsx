@@ -8,6 +8,8 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 
 function Contact() {
+  const [buttonClicked, setButtonClicked] = useState(false);
+
   // Variables
   const {
     register,
@@ -20,6 +22,11 @@ function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSended, setIsSended] = useState(false);
 
+  const handleButtonClick = () => {
+    console.log("Bouton cliqué !");
+    // Exécutez ici la logique pour envoyer le formulaire (à adapter selon vos besoins)
+    setIsSended(true);
+  };
   // Méthode
   const onSubmitHandler = async (data) => {
     if (!isLoading) {
@@ -135,7 +142,17 @@ function Contact() {
           </div>
 
           <div className="flex justify-center mt-10">
-            {!isLoading && <NeonButton>Envoyez</NeonButton>}
+            {!isLoading && (
+              <a className="neonButton text-center flex justify-center items-center">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button className="neonButton flex justify-center items-center">
+                  envoyez
+                </button>
+              </a>
+            )}
           </div>
         </form>
       </div>
