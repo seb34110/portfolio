@@ -10,3 +10,4 @@ export const NeonButton = () => {
     </a>
   );
 };
+export default NeonButton;

@@ -117,3 +117,5 @@ export const CardWordpress = () => {
     </>
   );
 };
+
+export default CardWordpress;

@@ -26,3 +26,4 @@ export const CardDev = () => {
     </section>
   );
 };
+export default CardDev;

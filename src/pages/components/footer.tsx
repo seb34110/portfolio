@@ -64,3 +64,5 @@ export const FooterSite = () => {
     </div>
   );
 };
+
+export default FooterSite;
