@@ -34,7 +34,18 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     .replace(/<(?!br\s*\/?)[^>]+>/g, "");
 
   // Donner la clé API
-  sgMail.setApiKey(process.env.KEY_SENDGRID);
+  const sendGridApiKey = process.env.KEY_SENDGRID;
+
+  if (!sendGridApiKey) {
+    // Gérer le cas où la clé API est manquante
+    console.error("Clé API SendGrid manquante.");
+    res.status(500).json({
+      message: "ERREUR PARAMÉTRAGE CLÉ API SENDGRID",
+    });
+    return;
+  }
+
+  sgMail.setApiKey(sendGridApiKey);
 
   // Création du message
   const sendGridMail = {
