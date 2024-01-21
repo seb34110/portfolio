@@ -8,7 +8,12 @@ export default function Header() {
           <header className="bg-black text-white mt-auto flex items-center justify-between">
             <div className="h-16">
               <a href="./">
-                <Image src="/logoSWC.jpg" width="50" height="50" alt="logo" />
+                <Image
+                  src="/profile/logoSWC.jpg"
+                  width="50"
+                  height="50"
+                  alt="logo"
+                />
               </a>
             </div>
             <ul className="text-xl ml-4 flex justify-end">
