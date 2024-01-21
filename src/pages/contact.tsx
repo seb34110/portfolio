@@ -116,12 +116,12 @@ function Contact() {
               </div>
             </div>
 
-            <div className="mt-5 w-96 ">
+            <div className="mt-5 w-96">
               <label htmlFor="contenu" className="flex justify-between mb-2">
                 Contenu du message
               </label>
               <textarea
-                className="input flex justify-center sm:h-40 w-full lg:h-48 w-96 md:h-32 w-64"
+                className="input flex justify-center sm:h-40 w-64 lg:h-48 w-64 md:h-32 w-64"
                 placeholder="Bonjour..."
                 {...register("contenu", {
                   required: true,

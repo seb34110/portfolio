@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <>
       <section>
-        <div className="hero">
-          <footer className="hero-content footer bg-dark mt-auto flex items-center justify-between">
+        <div className="">
+          <footer className="footer bg-dark mt-auto flex items-center justify-between">
             <aside className="flex items-center">
               <Image
                 src="/profile/logoSWC.jpg"
