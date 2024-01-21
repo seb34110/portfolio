@@ -17,25 +17,13 @@
 }
 
 body {
-  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
-}
-footer {
-  background-color: black;
-}
-header {
-  background-color: black;
-}
-
-.flex {
-  display: flex;
-}
-
-.Card {
-  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
-}
-
-.Skills {
-  background: linear-gradient(to left top, rgb(73, 73, 77), rgb(0, 0, 0));
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
 .neonButton {

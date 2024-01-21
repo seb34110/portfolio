@@ -1,17 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 
-export const Skills = () => {
+export default function Skills() {
   return (
     <>
-      <section>
-        <h2 className="p-6 text-cyan-500 flex justify-center items-center text-4xl mt-2 mb-10">
-          Skills
-        </h2>
-        <div className="ml-10 flex justify-center hover:flex-row hover:animate-bounce delay-75">
+      <section className="hero">
+        <div className="hero-contant ml-4 flex-row w-full md:w-1/2 flex hover:flex-row hover:animate-bounce delay-75">
           <svg
             href="../icons/wordpress"
             data-name="wordpress"
-            viewBox="0 0 60 60"
+            viewBox="0 0 40 40"
             id="wordpress"
           >
             <path
@@ -23,7 +21,7 @@ export const Skills = () => {
           <svg
             href="../icons/java-script"
             data-name="Java-Script"
-            viewBox="0 0 60 60"
+            viewBox="0 0 40 40"
             id="java-script"
           >
             <path
@@ -35,7 +33,7 @@ export const Skills = () => {
           <svg
             href="../icons/react"
             data-name="React"
-            viewBox="0 0 60 60"
+            viewBox="0 0 40 40"
             id="react"
           >
             <path
@@ -47,7 +45,7 @@ export const Skills = () => {
           <svg
             href="../icons/html5"
             data-name="Html5"
-            viewBox="0 0 60 60"
+            viewBox="0 0 40 40"
             id="html5"
           >
             <path
@@ -58,7 +56,7 @@ export const Skills = () => {
           <svg
             href="../icons/css3"
             data-name="CSS3"
-            viewBox="0 0 60 60"
+            viewBox="0 0 40 40"
             id="css3-simple"
           >
             <path
@@ -69,7 +67,7 @@ export const Skills = () => {
           <svg
             href="../icons/linux"
             data-name="Linux"
-            viewBox="0 0 60 60"
+            viewBox="0 0 40 40"
             id="linux"
           >
             <path
@@ -80,7 +78,7 @@ export const Skills = () => {
           <svg
             href="../icons/windows"
             data-name="Windows"
-            viewBox="0 0 60 60"
+            viewBox="0 0 40 40"
             id="windows"
           >
             <path
@@ -91,7 +89,7 @@ export const Skills = () => {
           <svg
             href="../icons/github"
             data-name="Git"
-            viewBox="0 0 60 60"
+            viewBox="0 0 40 40"
             id="github"
           >
             <path
@@ -103,6 +101,4 @@ export const Skills = () => {
       </section>
     </>
   );
-};
-
-export default Skills;
+}

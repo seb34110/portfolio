@@ -1,121 +1,88 @@
-import { Card } from "flowbite-react";
-import { NeonButton } from "../components/neonButton";
-import Link from "next/link";
 import Image from "next/image";
-
-export const CardWordpress = () => {
+export default function CardWordpress() {
   return (
     <>
-      <div className=" mt-10 text-cyan-500 text-4xl flex justify-center">
-        <h1>Projets WordPress</h1>
-      </div>
-
-      <section className="flex justify-center items-center-y space-x-10">
-        <div className="card">
-          <Card className="flex ml-10 mt-10 w-60 h-70 bg-#111111 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
-            <a href="https://la-fabrique.iteeweb.fr/">
-              <Image
-                src="/iconsWordpress/image5.jpg"
-                width={200}
-                height={200}
-                alt="la fabrique restaurant"
-                className="rounded-lg mt-4 mx-auto"
-              />
-            </a>
-            <div className="p-9 flex flex-col items-center">
-              <a href="https://la-fabrique.iteeweb.fr/">
-                <h5 className="mb-20 flex justify-center text-center text-2xl font-arial text-white dark:text-white">
-                  Site vitrine de restaurant
-                </h5>
-              </a>
-              <a
-                className="neonButton text-center flex justify-center items-center"
-                href="https://la-fabrique.iteeweb.fr/"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <button className="neonButton flex justify-center items-center">
-                  Visite ici
-                </button>
-              </a>
-            </div>
-          </Card>
-        </div>
-
-        <div className="card">
-          <Card className="ml-10 mt-10 bg-#111111 w-60 h-70 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
-            <a href="https://solution-net34.iteeweb.fr/">
-              <Image
-                src="/iconsWordpress/solutionNet.jpg"
-                width={200}
-                height={200}
-                alt="closMarsault"
-                className="rounded-lg mt-4 mx-auto"
-              />
-            </a>
-
-            <div className="p-9 flex flex-col items-center">
-              <a href="https://solution-net34.iteeweb.fr/">
-                <h5 className="mb-20 flex justify-center text-center text-2xl font-arial text-white dark:text-white">
-                  Site vitrine de nettoyage
-                </h5>
-              </a>
-
-              <a
-                href="https://solution-net34.iteeweb.fr/"
-                className="neonButton text-center flex justify-center items-center"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <button className="neonButton flex justify-center items-center">
-                  Visite ici
-                </button>
-              </a>
-            </div>
-          </Card>
-        </div>
-
-        <div className="card">
-          <Card className="ml-10 mt-10 bg-#111111 w-60 h-70 border border-gray-200 rounded-lg shadow-lg hover:shadow-white">
-            <a href="https://clos-marsault.iteeweb.fr/">
+      <section className="hero">
+        <div className="hero-content card grid-flex-col md:flex-row">
+          <div className="shadow-lg hover:shadow-white">
+            <figure>
               <Image
                 src="/iconsWordpress/closMarsault.png"
-                width={200}
-                height={200}
-                alt="closMarsault"
-                className="rounded-lg mt-4 mx-auto"
+                width="200"
+                height="200"
+                alt="chambre d'hôte"
+                className="rounded-lg"
               />
-            </a>
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Site Vitrine</h2>
+              <p>Chambres hôtes</p>
 
-            <div className="p-9 flex flex-col items-center">
-              <a href="https://clos-marsault.iteeweb.fr/">
-                <h5 className="mb-20 flex justify-center text-center text-2xl font-arial text-white dark:text-white">
-                  Site vitrine chambre hôtes
-                </h5>
-              </a>
+              <div className="card-actions neonButton">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
 
-              <a
-                href="https://clos-marsault.iteeweb.fr/"
-                className="neonButton text-center flex justify-center items-center"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <button className="neonButton flex justify-center items-center">
-                  Visite ici
+                <button className="neonButton text-xl">
+                  <a href="https://clos-marsault.iteeweb.fr/">Visiter </a>
                 </button>
-              </a>
+              </div>
             </div>
-          </Card>
+          </div>
+
+          <div className="shadow-lg hover:shadow-white">
+            <figure>
+              <Image
+                src="/iconsWordpress/solutionNet.jpg"
+                width="200"
+                height="200"
+                alt="entrepride de nettoyage"
+                className="rounded-lg"
+              />
+            </figure>
+
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Site Vitrine</h2>
+              <p>Société de nettoyage</p>
+              <div className="card-actions neonButton">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button className="neonButton text-xl">
+                  <a href="https://solution-net34.iteeweb.fr/">Visiter </a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="shadow-lg hover:shadow-white">
+            <figure>
+              <Image
+                src="/iconsWordpress/image5.jpg"
+                width="200"
+                height="200"
+                alt="restaurant"
+                className="rounded-lg"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Site Vitrine</h2>
+              <p>Restaurant la Fabrique</p>
+              <div className="card-actions neonButton">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button className="neonButton text-xl">
+                  <a href="https://la-fabrique.iteeweb.fr/">Visiter</a>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
   );
-};
-
-export default CardWordpress;
+}

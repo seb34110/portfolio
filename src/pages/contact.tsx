@@ -1,6 +1,4 @@
-import Link from "next/link";
-import { NeonButton } from "./components/neonButton";
-import { HeaderSite } from "./components/header";
+import Header from "./components/header";
 import { FooterSite } from "./components/footer";
 
 import { useForm } from "react-hook-form";
@@ -50,10 +48,8 @@ function Contact() {
 
   return (
     <>
-      <HeaderSite />
-      <div>
-        <h1>Contact</h1>
-      </div>
+      <Header />
+
       <div className="text-xl">
         <h1 className="mt-28 text-6xl text-cyan-500  flex justify-center">
           Contact
@@ -77,7 +73,7 @@ function Contact() {
                   Prénom
                 </label>
                 <input
-                  className="text-black"
+                  className="input"
                   placeholder="Prénom"
                   id="prenom"
                   {...register("prenom", {
