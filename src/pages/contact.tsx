@@ -49,101 +49,104 @@ function Contact() {
   return (
     <>
       <Header />
-
-      <div className="text-xl">
-        <h1 className="mt-28 text-6xl text-cyan-500  flex justify-center">
-          Contact
-        </h1>
-
-        {/* Formulaire */}
-        <form
-          className="mt-28 w-500 mx-auto"
-          onSubmit={handleSubmit(onSubmitHandler)}
-        >
-          {isSended && (
-            <p className="text-white mb-10 flex justify-center">
-              Votre message a bien été envoyé avec succès je vous répondrez
-              rapidement.
-            </p>
-          )}
-          <div>
-            <div className="flex justify-center grid grid-cols-2 gap-20">
+      <section className="flex justify-center items-center flex min-h-screen">
+        <div className="text-xl">
+          <h1 className="flex justify-center mt-5 text-4xl text-cyan-500 mb-5">
+            Contact
+          </h1>
+          {/* Formulaire */}
+          <form
+            className=" sm:w-1/2 ml-32 md:w-1/2"
+            onSubmit={handleSubmit(onSubmitHandler)}
+          >
+            {isSended && (
+              <p className="text-white mb-10 flex justify-center">
+                Votre message a bien été envoyé avec succès je vous répondrez
+                rapidement.
+              </p>
+            )}
+            <div className="grid grid-cols-1 gap-3">
               <div>
-                <label htmlFor="prenom" className="label">
-                  Prénom
+                <div>
+                  <label htmlFor="prenom" className="label">
+                    Prénom
+                  </label>
+                  <input
+                    className="input"
+                    placeholder="Prénom"
+                    id="prenom"
+                    {...register("prenom", {
+                      required: true,
+                    })}
+                  />
+                  {errors.prenom && (
+                    <small className="text-red-500">Prénom requis.</small>
+                  )}
+                </div>
+                <div>
+                  <label htmlFor="nom" className="label">
+                    Nom
+                  </label>
+                  <input
+                    className="input"
+                    placeholder="Nom"
+                    id="nom"
+                    {...register("nom", {
+                      required: true,
+                    })}
+                  />
+                  {errors.nom && (
+                    <small className="text-red-500">Nom requis.</small>
+                  )}
+                </div>
+              </div>
+              <div>
+                <label htmlFor="email" className="label">
+                  Adresse mail
                 </label>
                 <input
                   className="input"
-                  placeholder="Prénom"
-                  id="prenom"
-                  {...register("prenom", {
+                  placeholder="Adresse mail"
+                  id="email"
+                  {...register("email", {
                     required: true,
                   })}
                 />
-                {errors.prenom && <small>Prénom requis.</small>}
-              </div>
-              <div>
-                <label htmlFor="nom" className="label">
-                  Nom
-                </label>
-                <input
-                  className="input"
-                  placeholder="Nom"
-                  id="nom"
-                  {...register("nom", {
-                    required: true,
-                  })}
-                />
-                {errors.nom && <small>Nom requis.</small>}
+                {errors.email && (
+                  <small className="text-red-500">email requis.</small>
+                )}
               </div>
             </div>
-            <div className="mt-10 flex justify-center  grid grid-cols-4 gap-2">
-              <label htmlFor="email" className="label">
-                Adresse email
-              </label>
-              <input
-                className="input mb-5"
-                placeholder="Adresse email"
-                id="email"
-                {...register("email", {
-                  required: true,
-                })}
-              />
-              {errors.email && <small>email requis.</small>}
-            </div>
-          </div>
 
-          <div className="mt-5 flex justify-center">
-            <div>
-              <label htmlFor="contenu" className="flex justify-center mb-2">
+            <div className="mt-5 w-96 ">
+              <label htmlFor="contenu" className="flex justify-between mb-2">
                 Contenu du message
               </label>
               <textarea
-                className="input flex justify-center w-96 h-full"
+                className="input flex justify-center sm:h-40 w-full lg:h-48 w-96 md:h-32 w-64"
                 placeholder="Bonjour..."
                 {...register("contenu", {
                   required: true,
                 })}
               ></textarea>
-              {errors.contenu && <small className="">Message requis.</small>}
+              {errors.contenu && (
+                <small className="text-red-500">Message requis.</small>
+              )}
             </div>
-          </div>
-
-          <div className="flex justify-center mt-20">
-            {!isLoading && (
-              <a className="neonButton text-center flex justify-center items-center">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <button className="neonButton flex justify-center items-center">
+            <div className="mt-5">
+              {!isLoading && (
+                <button className="neonButton">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
                   envoyez
                 </button>
-              </a>
-            )}
-          </div>
-        </form>
-      </div>
+              )}
+            </div>
+          </form>
+        </div>
+      </section>
       <FooterSite />
     </>
   );

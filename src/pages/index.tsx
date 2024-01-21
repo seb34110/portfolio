@@ -4,7 +4,6 @@ import Profile from "./components/profile";
 import Skills from "./components/skills";
 import CardWordpress from "./components/cardWordpress";
 import { Inter } from "next/font/google";
-import { useForm } from "react-hook-form";
 
 const inter = Inter({ subsets: ["latin"] });
 
