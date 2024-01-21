@@ -1,68 +1,59 @@
-import Link from "next/link";
 import Image from "next/image";
 
-export const FooterSite = () => {
+export default function Footer() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <footer className="bg-black text-white p-4 mt-auto flex items-center justify-between">
-        <span>@ Copywright 2022 Sébastien Wendling</span>
-        <div>
-          <Link href="./">
-            <Image
-              src="/logoSWC.jpg"
-              width="50"
-              height="50"
-              alt="logo SecureWeb Creation"
-            />
-          </Link>
-        </div>
-        <ul className="flex justify-end mr-5">
-          <li className="mr-5">
-            <Link href="../contact">Contact</Link>
-          </li>
-          <li className="mr-5">
-            <Link href="mailto:sebastienwendling@iteeweb.fr">Email</Link>
-          </li>
+    <>
+      <section>
+        <div className="hero">
+          <footer className="hero-content footer bg-dark mt-auto flex items-center justify-between">
+            <aside className="flex items-center">
+              <Image
+                src="/profile/logoSWC.jpg"
+                width="36"
+                height="36"
+                alt="logo"
+              />
 
-          <div className="flex justify-end">
-            <div className="social-icons">
-              <a href="https://www.facebook.com/profile.php?id=100090885591076">
+              <p className="ml-2">Copyright©2020</p>
+              <a href="mailto:sebastienwendling@orange.fr" className="ml-2">
+                <p className="text-yellow-500">Mon mail</p>
+              </a>
+            </aside>
+            <nav className="flex items-center">
+              <a href="https://github.com/seb34110" className="mr-2">
                 <Image
-                  src="/iconsSociaux/facebook.png"
-                  width={20}
-                  height={20}
-                  alt="facebook"
-                  className="rounded-lg mx-auto mr-2"
+                  src="/iconsSociaux/github.png"
+                  width="24"
+                  height="24"
+                  alt="gitHub"
+                  className="fill-current"
                 />
               </a>
-            </div>
-            <div className="social-icons">
-              <a href="lien-de-votre-page-instagram">
+              <a
+                href="https://www.linkedin.com/in/s%C3%A9bastien-wendling-274817292/"
+                className="mr-2"
+              >
                 <Image
-                  src="/iconsSociaux/instagram.png"
-                  width={20}
-                  height={20}
-                  alt="instagram"
-                  className="rounded-lg mx-auto mr-2"
+                  src="/iconsSociaux/linkedin.png"
+                  width="24"
+                  height="24"
+                  alt="linkedin"
+                  className="fill-current"
                 />
               </a>
-            </div>
-            <div className="social-icons">
-              <a href="lien-de-votre-page-whatsapp">
+              <a href="https://wa.me/782403442" className="mr-2">
                 <Image
                   src="/iconsSociaux/whatsapp.png"
-                  width={20}
-                  height={20}
+                  width="24"
+                  height="24"
                   alt="whatsapp"
-                  className="rounded-lg mx-auto"
+                  className="fill-current"
                 />
               </a>
-            </div>
-          </div>
-        </ul>
-      </footer>
-    </div>
+            </nav>
+          </footer>
+        </div>
+      </section>
+    </>
   );
-};
-
-export default FooterSite;
+}

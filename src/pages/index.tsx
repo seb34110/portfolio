@@ -1,5 +1,5 @@
 import Header from "./components/header";
-import { FooterSite } from "./components/footer";
+import Footer from "./components/footer";
 import Profile from "./components/profile";
 import Skills from "./components/skills";
 import CardWordpress from "./components/cardWordpress";
@@ -28,7 +28,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <FooterSite />
+      <Footer />
     </>
   );
 }

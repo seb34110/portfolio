@@ -1,5 +1,5 @@
 import Header from "./components/header";
-import { FooterSite } from "./components/footer";
+import Footer from "./components/footer";
 
 import { useForm } from "react-hook-form";
 import { useState } from "react";
@@ -49,14 +49,12 @@ function Contact() {
   return (
     <>
       <Header />
-      <section className="flex justify-center items-center flex min-h-screen">
-        <div className="text-xl">
-          <h1 className="flex justify-center mt-5 text-4xl text-cyan-500 mb-5">
-            Contact
-          </h1>
+      <section className="hero flex justify-center items-center flex min-h-screen w-screen">
+        <div className="ring-2 ring-white shadow-lg hover:shadow-white text-xl">
+          <h1 className="flex justify-center mt-5 text-4xl mb-5">Contact</h1>
           {/* Formulaire */}
           <form
-            className=" sm:w-1/2 ml-32 md:w-1/2"
+            className="sm:w-1/2 ml-32 md:w-1/2"
             onSubmit={handleSubmit(onSubmitHandler)}
           >
             {isSended && (
@@ -135,7 +133,7 @@ function Contact() {
             </div>
             <div className="mt-5">
               {!isLoading && (
-                <button className="neonButton">
+                <button className="neonButton mb-5">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -147,7 +145,7 @@ function Contact() {
           </form>
         </div>
       </section>
-      <FooterSite />
+      <Footer />
     </>
   );
 }

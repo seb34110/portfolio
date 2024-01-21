@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <>
       <section>
-        <div className="flex flex-col max-h-screen">
-          <header className="bg-black  text-white p-1 mt-auto flex items-center justify-between">
+        <div className="flex flex-col max-h-screen max-w-screen">
+          <header className="bg-black text-white mt-auto flex items-center justify-between">
             <div className="h-16">
               <a href="./">
                 <Image

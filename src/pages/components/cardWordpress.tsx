@@ -14,7 +14,7 @@ export default function CardWordpress() {
                 className="rounded-lg"
               />
             </figure>
-            <div className="card-body items-center text-center">
+            <div className="card-body items-center text-center text-xl mb-5">
               <h2 className="card-title">Site Vitrine</h2>
               <p>Chambres hôtes</p>
 
@@ -42,7 +42,7 @@ export default function CardWordpress() {
               />
             </figure>
 
-            <div className="card-body items-center text-center">
+            <div className="card-body items-center text-center text-xl mb-5">
               <h2 className="card-title">Site Vitrine</h2>
               <p>Société de nettoyage</p>
               <div className="card-actions neonButton">
@@ -67,7 +67,7 @@ export default function CardWordpress() {
                 className="rounded-lg"
               />
             </figure>
-            <div className="card-body items-center text-center">
+            <div className="card-body items-center text-center text-xl mb-5">
               <h2 className="card-title">Site Vitrine</h2>
               <p>Restaurant la Fabrique</p>
               <div className="card-actions neonButton">
