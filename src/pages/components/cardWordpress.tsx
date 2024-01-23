@@ -3,7 +3,7 @@ export default function CardWordpress() {
   return (
     <>
       <section className="hero">
-        <div className="hero-content card grid-flex-col md:flex-row">
+        <div className="hero-content card grid-flex-row min-w-screen md:flex-row">
           <div className="shadow-lg hover:shadow-white">
             <figure>
               <Image
