@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Skills() {
   return (
     <>
-      <section className="hero">
-        <div className="hero-contant ml-4 flex-row w-full md:w-1/2 flex hover:flex-row hover:animate-bounce delay-75">
+      <section className="">
+        <div className="ml-4 flex-row flex hover:flex-row hover:animate-bounce delay-75">
           <svg
             href="../icons/wordpress"
             data-name="wordpress"
