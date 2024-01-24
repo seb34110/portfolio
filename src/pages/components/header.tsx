@@ -10,9 +10,10 @@ export default function Header() {
               <a href="./">
                 <Image
                   src="/profile/logoSWC.jpg"
-                  width="50"
-                  height="50"
+                  width="40"
+                  height="40"
                   alt="logo"
+                  className="ml-2"
                 />
               </a>
             </div>
