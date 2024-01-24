@@ -50,12 +50,12 @@ function Contact() {
     <>
       <Header />
       <section>
-        <div className="flex items-center justify-center min-h-screen">
+        <div className="hero-content min-h-screen">
           <div className="ring-2 ring-white shadow-lg hover:shadow-white text-xl">
             <h1 className="flex justify-center text-4xl mt-10 mb-5">Contact</h1>
             {/* Formulaire */}
             <form
-              className="sm:w-1/2 ml-32 md:w-1/2"
+              className="md:w-1/2 flex justify-center sm:w-1/2 mx-12 my-10"
               onSubmit={handleSubmit(onSubmitHandler)}
             >
               {isSended && (
@@ -64,7 +64,7 @@ function Contact() {
                   rapidement.
                 </p>
               )}
-              <div className="grid grid-cols-1 gap-2">
+              <div>
                 <div>
                   <div>
                     <label htmlFor="prenom" className="label">
