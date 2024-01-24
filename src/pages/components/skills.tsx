@@ -5,11 +5,11 @@ export default function Skills() {
   return (
     <>
       <section>
-        <div className="mx-10 flex-row items-center flex hover:flex-row hover:animate-bounce delay-75">
+        <div className="hero-content mx-10 flex-row items-center flex hover:flex-row hover:animate-bounce delay-75">
           <svg
             href="../icons/wordpress"
             data-name="wordpress"
-            viewBox="0 0 50 50"
+            viewBox="0 0 22 22"
             id="wordpress"
           >
             <path
@@ -21,7 +21,7 @@ export default function Skills() {
           <svg
             href="../icons/java-script"
             data-name="Java-Script"
-            viewBox="0 0 50 50"
+            viewBox="0 0 22 22"
             id="java-script"
           >
             <path
@@ -33,7 +33,7 @@ export default function Skills() {
           <svg
             href="../icons/react"
             data-name="React"
-            viewBox="0 0 50 50"
+            viewBox="0 0 22 22"
             id="react"
           >
             <path
@@ -45,7 +45,7 @@ export default function Skills() {
           <svg
             href="../icons/html5"
             data-name="Html5"
-            viewBox="0 0 50 50"
+            viewBox="0 0 22 22"
             id="html5"
           >
             <path
@@ -56,7 +56,7 @@ export default function Skills() {
           <svg
             href="../icons/css3"
             data-name="CSS3"
-            viewBox="0 0 50 50"
+            viewBox="0 0 22 22"
             id="css3-simple"
           >
             <path
@@ -67,7 +67,7 @@ export default function Skills() {
           <svg
             href="../icons/linux"
             data-name="Linux"
-            viewBox="0 0 50 50"
+            viewBox="0 0 22 22"
             id="linux"
           >
             <path
@@ -78,7 +78,7 @@ export default function Skills() {
           <svg
             href="../icons/windows"
             data-name="Windows"
-            viewBox="0 0 50 50"
+            viewBox="0 0 22 22"
             id="windows"
           >
             <path
@@ -89,7 +89,7 @@ export default function Skills() {
           <svg
             href="../icons/github"
             data-name="Git"
-            viewBox="0 0 50 50"
+            viewBox="0 0 22 22"
             id="github"
           >
             <path
