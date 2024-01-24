@@ -5,8 +5,8 @@ export default function Header() {
     <>
       <section>
         <div className="flex flex-col max-h-screen max-w-screen">
-          <header className="bg-black text-white mt-auto flex items-center justify-between">
-            <div className="h-16">
+          <header className="bg-black text-white mt-5 flex items-center justify-between">
+            <div>
               <a href="./">
                 <Image
                   src="/profile/logoSWC.jpg"
