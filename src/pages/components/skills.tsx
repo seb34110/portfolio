@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <>
       <section>
-        <div className="flex hover:flex-row hover:animate-bounce delay-75">
+        <div className="flex flex-row">
           <svg
             href="../icons/wordpress"
             data-name="wordpress"
