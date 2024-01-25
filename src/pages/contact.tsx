@@ -55,7 +55,7 @@ function Contact() {
             <h1 className="flex justify-center text-4xl mt-10 mb-5">Contact</h1>
             {/* Formulaire */}
             <form
-              className="md:w-1/2 flex justify-center sm:w-1/2 mx-24 p-10"
+              className="flex justify-center"
               onSubmit={handleSubmit(onSubmitHandler)}
             >
               {isSended && (
@@ -116,9 +116,11 @@ function Contact() {
                   )}
                 </div>
                 <div>
-                  <label htmlFor="contenu">Message</label>
+                  <label htmlFor="contenu" className="label">
+                    Message
+                  </label>
                   <textarea
-                    className="input mt-2 mb-2"
+                    className="input"
                     placeholder="Bonjour..."
                     {...register("contenu", {
                       required: true,
