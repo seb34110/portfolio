@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <>
       <section>
-        <div className="flex flex-row">
+        <div className="hero-content flex flex-row">
           <svg
             href="../icons/wordpress"
             data-name="wordpress"
