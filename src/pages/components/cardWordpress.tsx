@@ -3,22 +3,21 @@ export default function CardWordpress() {
   return (
     <>
       <section className="hero">
-        <div className="hero-content card grid-flex-row min-w-screen md:flex-row">
+        <div className="hero-content grid grid-row-3 md:grid-cols-3 w-full lg:grid-cols-3 w-full">
           <div className="shadow-lg hover:shadow-white">
-            <figure>
+            <figure className="flex justify-center mt-5">
               <Image
                 src="/iconsWordpress/closMarsault.png"
                 width="200"
                 height="200"
                 alt="chambre d'hôte"
-                className="rounded-lg"
               />
             </figure>
             <div className="card-body items-center text-center text-xl mb-5">
               <h2 className="card-title">Site Vitrine</h2>
               <p>Chambres hôtes</p>
 
-              <div className="card-actions neonButton">
+              <div className="neonButton">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -32,20 +31,19 @@ export default function CardWordpress() {
           </div>
 
           <div className="shadow-lg hover:shadow-white">
-            <figure>
+            <figure className="flex justify-center mt-5">
               <Image
                 src="/iconsWordpress/solutionNet.jpg"
                 width="200"
                 height="200"
                 alt="entrepride de nettoyage"
-                className="rounded-lg"
               />
             </figure>
 
             <div className="card-body items-center text-center text-xl mb-5">
               <h2 className="card-title">Site Vitrine</h2>
               <p>Société de nettoyage</p>
-              <div className="card-actions neonButton">
+              <div className=" neonButton">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -58,13 +56,12 @@ export default function CardWordpress() {
           </div>
 
           <div className="shadow-lg hover:shadow-white">
-            <figure>
+            <figure className="flex justify-center mt-5">
               <Image
                 src="/iconsWordpress/image5.jpg"
                 width="200"
                 height="200"
                 alt="restaurant"
-                className="rounded-lg"
               />
             </figure>
             <div className="card-body items-center text-center text-xl mb-5">

@@ -50,8 +50,8 @@ function Contact() {
     <>
       <Header />
       <section>
-        <div className="min-h-screen">
-          <div className="ring-2 ring-white shadow-lg hover:shadow-white text-xl">
+        <div>
+          <div className="ring-2 ring-white min-h-screen shadow-lg hover:shadow-white text-xl">
             <h1 className="flex justify-center text-4xl mt-10 mb-5">Contact</h1>
             {/* Formulaire */}
             <form
@@ -59,7 +59,7 @@ function Contact() {
               onSubmit={handleSubmit(onSubmitHandler)}
             >
               {isSended && (
-                <p className="text-white mb-10 flex justify-center">
+                <p className="text-white mb-10flex justify-center">
                   Votre message a bien été envoyé avec succès je vous répondrez
                   rapidement.
                 </p>

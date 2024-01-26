@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function Skills() {
   return (
     <>
-      <section>
-        <div className="hero-content flex flex-row">
+      <section className="">
+        <div className="hero-content skeleton h-25 flex items-center md:h-35 lg:h-46 flex items-center">
           <svg
             href="../icons/wordpress"
             data-name="wordpress"
-            viewBox="0 0 32 22"
+            viewBox="0 0 42 22"
             id="wordpress"
           >
             <path
@@ -20,7 +20,7 @@ export default function Skills() {
           <svg
             href="../icons/java-script"
             data-name="Java-Script"
-            viewBox="0 0 32 22"
+            viewBox="0 0 42 22"
             id="java-script"
           >
             <path
@@ -32,7 +32,7 @@ export default function Skills() {
           <svg
             href="../icons/react"
             data-name="React"
-            viewBox="0 0 32 22"
+            viewBox="0 0 42 22"
             id="react"
           >
             <path
@@ -44,7 +44,7 @@ export default function Skills() {
           <svg
             href="../icons/html5"
             data-name="Html5"
-            viewBox="0 0 32 22"
+            viewBox="0 0 42 22"
             id="html5"
           >
             <path
@@ -55,7 +55,7 @@ export default function Skills() {
           <svg
             href="../icons/css3"
             data-name="CSS3"
-            viewBox="0 0 32 22"
+            viewBox="0 0 42 22"
             id="css3-simple"
           >
             <path
@@ -66,7 +66,7 @@ export default function Skills() {
           <svg
             href="../icons/linux"
             data-name="Linux"
-            viewBox="0 0 32 22"
+            viewBox="0 0 42 22"
             id="linux"
           >
             <path
@@ -77,18 +77,18 @@ export default function Skills() {
           <svg
             href="../icons/windows"
             data-name="Windows"
-            viewBox="0 0 22 22"
+            viewBox="0 0 42 22"
             id="windows"
           >
             <path
               fill="#05CEE0"
-              d="M22 2 11.2 3.6v8l10.8-.1V2zM10.2 12.5 2 12.4v6.8l8.1 1.1.1-7.8zM2 4.8v6.8h8.1V3.7L2 4.8zm9.1 7.7v7.9L32 22v-9.4l-10.9-.1z"
+              d="M22 2 11.2 3.6v8l10.8-.1V2zM10.2 12.5 2 12.4v6.8l8.1 1.1.1-7.8zM2 4.8v6.8h8.1V3.7L2 4.8zm9.1 7.7v7.9L22 22v-9.4l-10.9-.1z"
             ></path>
           </svg>
           <svg
             href="../icons/github"
             data-name="Git"
-            viewBox="0 0 32 22"
+            viewBox="0 0 42 22"
             id="github"
           >
             <path
