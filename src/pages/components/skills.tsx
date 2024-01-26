@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <>
       <section className="">
-        <div className="hero-content skeleton h-25 flex items-center md:h-35 lg:h-46 flex items-center">
+        <div className="skeleton h-38 p-6 md:h-45 flex items-center justify-between lg:h-56 flex items-center justify-between">
           <Image
             src="/icons/wordpress_logo.png"
             width="100"
@@ -18,6 +18,7 @@ export default function Skills() {
             width="100"
             height="100"
             alt="typeScrypt"
+            className="ml-2"
           />
 
           <Image
@@ -25,6 +26,7 @@ export default function Skills() {
             width="100"
             height="100"
             alt="react"
+            className="ml-2"
           />
 
           <Image
@@ -32,6 +34,7 @@ export default function Skills() {
             width="100"
             height="100"
             alt="html5"
+            className="ml-2"
           />
 
           <Image
@@ -39,6 +42,7 @@ export default function Skills() {
             width="100"
             height="100"
             alt="tailwind"
+            className="ml-2"
           />
 
           <Image
@@ -46,6 +50,7 @@ export default function Skills() {
             width="100"
             height="100"
             alt="linux"
+            className="ml-2"
           />
 
           <Image
@@ -53,6 +58,7 @@ export default function Skills() {
             width="100"
             height="100"
             alt="windows"
+            className="ml-2"
           />
 
           <Image
@@ -60,6 +66,7 @@ export default function Skills() {
             width="100"
             height="100"
             alt="github"
+            className="ml-2"
           />
         </div>
       </section>
