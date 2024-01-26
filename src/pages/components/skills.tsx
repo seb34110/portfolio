@@ -46,7 +46,7 @@ export default function Skills() {
           />
 
           <Image
-            src="/icons/linux_icon.png"
+            src="/icons/linux_logo.png"
             width="100"
             height="100"
             alt="linux"
