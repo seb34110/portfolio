@@ -50,9 +50,9 @@ function Contact() {
     <>
       <Header />
       <section>
-        <div>
+        <div className="p-10">
           <div className="ring-2 ring-white min-h-screen shadow-lg hover:shadow-white text-xl">
-            <h1 className="flex justify-center text-4xl mt-10 mb-5">Contact</h1>
+            <h1 className="flex justify-center text-4xl mb-5">Contact</h1>
             {/* Formulaire */}
             <form
               className="flex justify-center"

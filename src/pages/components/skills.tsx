@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { UilWindows } from "@iconscout/react-unicons";
 
 export default function Skills() {
   return (
     <>
-      <section>
+      <section className="hero">
         <div className="hero-content">
-          <div className="skeleton h-38 p-6 md:h-45 flex items-center justify-between lg:h-56 flex items-center justify-between">
+          <div className="skeleton h-38 p-2 md:h-45 flex items-center justify-between lg:h-56 flex items-center justify-between">
             <Image
               src="/icons/wordpress_logo.png"
               width="100"
