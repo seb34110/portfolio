@@ -3,8 +3,8 @@ export default function CardWordpress() {
   return (
     <>
       <section className="hero">
-        <div className="hero-content grid grid-row-3 md:grid-cols-3 w-full lg:grid-cols-3 w-full">
-          <div className="shadow-lg shadow-black">
+        <div className="hero-content grid grid-row-3 md:grid-cols-3 w-full md:grid-cols-3 w-full">
+          <div className="shadow-md shadow-cyan-400">
             <figure className="flex justify-center mt-5">
               <Image
                 src="/iconsWordpress/closMarsault.png"
@@ -30,7 +30,7 @@ export default function CardWordpress() {
             </div>
           </div>
 
-          <div className="shadow-lg shadow-lg shadow-black">
+          <div className="shadow-md shadow-cyan-400">
             <figure className="flex justify-center mt-5">
               <Image
                 src="/iconsWordpress/solutionNet.jpg"
@@ -55,7 +55,7 @@ export default function CardWordpress() {
             </div>
           </div>
 
-          <div className="shadow-lg shadow-lg shadow-black">
+          <div className="shadow-md shadow-cyan-400">
             <figure className="flex justify-center mt-5">
               <Image
                 src="/iconsWordpress/image5.jpg"

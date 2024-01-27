@@ -20,23 +20,17 @@ export default function Header() {
             <ul className="text-xl ml-4 flex justify-end">
               <li className="mr-3 hover:text-cyan-500">
                 <a href="../">
-                  <button className="btn btn-active btn-ghost text-l">
-                    Accueil
-                  </button>
+                  <button className="btn btn-ghost text-l">Accueil</button>
                 </a>
               </li>
               <li className="mr-3 hover:text-cyan-500">
                 <a href="../contact">
-                  <button className="btn btn-active btn-ghost text-l">
-                    Contact
-                  </button>
+                  <button className="btn btn-ghost text-l">Contact</button>
                 </a>
               </li>
               <li className="mr-5 hover:text-cyan-500">
                 <a href="https://iteeweb.fr">
-                  <button className="btn btn-active btn-ghost text-l">
-                    Mon site
-                  </button>
+                  <button className="btn btn-ghost text-l">Mon site</button>
                 </a>
               </li>
             </ul>

@@ -51,7 +51,7 @@ function Contact() {
       <Header />
       <section>
         <div className="p-10">
-          <div className="shadow-lg shadow-black h-2xl min-h-screen w-full text-xl">
+          <div className="contact h-2xl min-h-screen w-full text-xl">
             <h1 className="flex justify-center text-4xl mb-10">Contact</h1>
             {/* Formulaire */}
             <form
@@ -59,7 +59,7 @@ function Contact() {
               onSubmit={handleSubmit(onSubmitHandler)}
             >
               {isSended && (
-                <p className="text-black mb-10 flex justify-center">
+                <p className="text-white mb-10 flex justify-center">
                   Votre message a bien été envoyé avec succès je vous répondrez
                   rapidement.
                 </p>
@@ -71,7 +71,7 @@ function Contact() {
                       Prénom
                     </label>
                     <input
-                      className="input shadow-sm shadow-black"
+                      className="input shadow-sm shadow-white"
                       placeholder="Prénom"
                       id="prenom"
                       {...register("prenom", {
@@ -87,7 +87,7 @@ function Contact() {
                       Nom
                     </label>
                     <input
-                      className="input shadow-sm shadow-black"
+                      className="input shadow-sm shadow-white"
                       placeholder="Nom"
                       id="nom"
                       {...register("nom", {
@@ -104,7 +104,7 @@ function Contact() {
                     Adresse mail
                   </label>
                   <input
-                    className="input shadow-sm shadow-black"
+                    className="input shadow-sm shadow-white"
                     placeholder="Adresse mail"
                     id="email"
                     {...register("email", {
@@ -120,7 +120,7 @@ function Contact() {
                     Message
                   </label>
                   <textarea
-                    className="input shadow-sm shadow-black"
+                    className="input h-56 shadow-sm shadow-white"
                     placeholder="Bonjour..."
                     {...register("contenu", {
                       required: true,

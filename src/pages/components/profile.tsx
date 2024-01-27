@@ -18,15 +18,11 @@ export default function Profile() {
                 />
               </div>
               <div className="flex flex-col gap-5 w-full">
-                <div className="skeleton bg-gray-500 h-12 w-65 text-3xl">
-                  Sébastien
-                </div>
-                <div className="skeleton bg-gray-500 h-12 w-65 text-3xl">
-                  Wendling
-                </div>
+                <div className="skeleton h-12 w-65 text-3xl">Sébastien</div>
+                <div className="skeleton h-12 w-65 text-3xl">Wendling</div>
               </div>
             </div>
-            <div className="skeleton bg-gray-500 h-24 w-full flex items-center justify-center">
+            <div className="skeleton h-24 w-full flex items-center justify-center">
               Développeur React & WordPress.
             </div>
           </div>

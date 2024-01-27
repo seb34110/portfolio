@@ -5,7 +5,7 @@ export default function Skills() {
     <>
       <section className="hero">
         <div className="hero-content">
-          <div className="skeleton bg-gray-500 h-38 p-2 md:h-45 flex items-center justify-between lg:h-56 flex items-center justify-between">
+          <div className="skeleton h-38 p-2 md:h-45 flex items-center justify-between lg:h-56 flex items-center justify-between">
             <Image
               src="/icons/wordpress_logo.png"
               width="100"
