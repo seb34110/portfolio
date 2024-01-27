@@ -19,8 +19,6 @@ const config: Config = {
   daisyui: {
     themes: ["light", "black", "cupcake"],
   },
-
-  plugins: [require("daisyui")],
   // daisyUI config (optional - here are the default values)
   daisyui: {
     themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
@@ -32,5 +30,7 @@ const config: Config = {
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
+
+  plugins: [require("daisyui")],
 };
 export default config;
