@@ -5,7 +5,7 @@ export default function Footer() {
     <>
       <section>
         <div className="">
-          <footer className="footer bg-dark mt-auto flex items-center justify-between">
+          <footer className="flex items-center justify-between">
             <aside className="flex items-center">
               <Image
                 src="/profile/logoSWC.jpg"
