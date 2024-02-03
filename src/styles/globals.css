@@ -122,6 +122,12 @@
     bottom: 100%;
   }
 }
+body {
+  background-image: url(https://shizo.fr/wp-content/uploads/2023/04/vecteezy_black-stone-texture-dark-slate-background-top-view__242-scaled.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .btn {
   border-radius: 10px;
 }
