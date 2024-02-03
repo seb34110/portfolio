@@ -19,11 +19,6 @@ export default function Header() {
             </div>
             <ul className="text-xl ml-4 flex justify-end">
               <li className="mr-3 hover:text-cyan-500">
-                <a href="../">
-                  <button className="btn btn-ghost text-l">Accueil</button>
-                </a>
-              </li>
-              <li className="mr-3 hover:text-cyan-500">
                 <a href="../contact">
                   <button className="btn btn-ghost text-l">Contact</button>
                 </a>
