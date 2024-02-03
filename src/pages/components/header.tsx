@@ -29,7 +29,7 @@ export default function Header() {
                 </a>
               </li>
               <li className="mr-5 hover:text-cyan-500">
-                <a href="https://iteeweb.fr">
+                <a href="https://secureweb.vercel.app">
                   <button className="btn btn-ghost text-l">Mon site</button>
                 </a>
               </li>
