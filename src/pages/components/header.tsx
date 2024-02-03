@@ -18,9 +18,9 @@ export default function Header() {
               </a>
             </div>
             <div className="ml-4 flex justify-end">
-              <div className="hover:text-cyan-500">
+              <div className="mr-3 hover:text-cyan-500">
                 <a href="../contact">
-                  <button className="neonButton btn btn-ghost text-l">
+                  <button className="neonButton btn btn-ghost text-lg">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -31,7 +31,7 @@ export default function Header() {
               </div>
               <div className="hover:text-cyan-500">
                 <a href="https://secureweb.vercel.app">
-                  <button className="neonButton btn btn-ghost">
+                  <button className="neonButton btn btn-ghost text-lg">
                     <span></span>
                     <span></span>
                     <span></span>
