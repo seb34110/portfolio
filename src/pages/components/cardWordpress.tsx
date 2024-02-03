@@ -14,7 +14,7 @@ export default function CardWordpress() {
               />
             </figure>
             <div className="card-body items-center text-center text-xl mb-5">
-              <h2 className="card-title">Site Vitrine</h2>
+              <h3 className="card-title">Site Vitrine</h3>
               <p>Chambres hôtes</p>
 
               <div className="neonButton">
@@ -41,7 +41,7 @@ export default function CardWordpress() {
             </figure>
 
             <div className="card-body items-center text-center text-xl mb-5">
-              <h2 className="card-title">Site Vitrine</h2>
+              <h3 className="card-title">Site Vitrine</h3>
               <p>Société de nettoyage</p>
               <div className=" neonButton">
                 <span></span>
@@ -65,7 +65,7 @@ export default function CardWordpress() {
               />
             </figure>
             <div className="card-body items-center text-center text-xl mb-5">
-              <h2 className="card-title">Site Vitrine</h2>
+              <h3 className="card-title">Site Vitrine</h3>
               <p>Restaurant la Fabrique</p>
               <div className="card-actions neonButton">
                 <span></span>

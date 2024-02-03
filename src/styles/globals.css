@@ -141,3 +141,30 @@ body {
 .contact {
   box-shadow: 0 10px 15px -3px #00cbe5, 0 4px 6px -2px #00cbe5;
 }
+h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 0.08em;
+  background-color: rgb(0, 0, 0);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: #abadad 3px 5px 0px;
+}
+h2 {
+  background: #2919ff;
+  background: -webkit-repeating-linear-gradient(
+    to right,
+    #2919ff 0%,
+    #00cbe5 100%
+  );
+  background: -moz-repeating-linear-gradient(
+    to right,
+    #2919ff 0%,
+    #00cbe5 100%
+  );
+  background: repeating-linear-gradient(to right, #2919ff 0%, #00cbe5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

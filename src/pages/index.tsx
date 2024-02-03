@@ -18,11 +18,15 @@ export default function Home() {
             <br />
             <Profile />
             <br />
-            <div className="divider divider-info">Skills</div>
+            <div className="divider divider-info">
+              <h2>Skills</h2>
+            </div>
             <br />
             <Skills />
             <br />
-            <div className="divider divider-info">Projets WordPress</div>
+            <div className="divider divider-info">
+              <h2>Projets WordPress</h2>
+            </div>
             <br />
             <CardWordpress />
           </div>

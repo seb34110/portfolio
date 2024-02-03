@@ -17,18 +17,30 @@ export default function Header() {
                 />
               </a>
             </div>
-            <ul className="text-xl ml-4 flex justify-end">
-              <li className="mr-3 hover:text-cyan-500">
+            <div className="ml-4 flex justify-end">
+              <div className="hover:text-cyan-500">
                 <a href="../contact">
-                  <button className="btn btn-ghost text-l">Contact</button>
+                  <button className="neonButton btn btn-ghost text-l">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Contact
+                  </button>
                 </a>
-              </li>
-              <li className="mr-5 hover:text-cyan-500">
+              </div>
+              <div className="hover:text-cyan-500">
                 <a href="https://secureweb.vercel.app">
-                  <button className="btn btn-ghost text-l">Mon site</button>
+                  <button className="neonButton btn btn-ghost">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Mon site
+                  </button>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </header>
         </div>
       </section>
