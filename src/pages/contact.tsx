@@ -55,7 +55,7 @@ function Contact() {
             <h1 className="flex justify-center text-4xl mb-10">Contact</h1>
             {/* Formulaire */}
             <form
-              className="flex justify-center"
+              className="max-w-8xl mx-auto text-2xl ml-4 sm:flex justify-center"
               onSubmit={handleSubmit(onSubmitHandler)}
             >
               {isSended && (
@@ -64,8 +64,8 @@ function Contact() {
                   rapidement.
                 </p>
               )}
-              <div>
-                <div>
+              <div className="space-y-4 text-lg">
+                <div className="md:w-full sm:grid-cols-2">
                   <div>
                     <label htmlFor="prenom" className="label">
                       Prénom
@@ -132,7 +132,7 @@ function Contact() {
                 </div>
                 <div>
                   {!isLoading && (
-                    <button className="neonButton mt-10 mb-5">
+                    <button className="neonButton btn btn-ghost mt-10 mb-5">
                       <span></span>
                       <span></span>
                       <span></span>

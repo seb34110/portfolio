@@ -6,7 +6,7 @@ export default function Header() {
       <section>
         <div className="sticky flex flex-col max-h-screen max-w-screen">
           <header className="mt-5 flex items-center justify-between">
-            <div>
+            <div className="flex items-center">
               <a href="./">
                 <Image
                   src="/profile/logoSWC.jpg"
@@ -17,7 +17,7 @@ export default function Header() {
                 />
               </a>
             </div>
-            <div className="ml-4 flex justify-end">
+            <div className="md:text-lg lg:text-lg xl:text-lg ml-4 flex justify-end">
               <div className="mr-3 hover:text-cyan-500">
                 <a href="../contact">
                   <button className="neonButton btn btn-ghost text-lg">
